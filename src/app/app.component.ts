@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'csf-revision';
+
+  processEvent(count:number){
+    console.info('button clicked')
+  }
 }

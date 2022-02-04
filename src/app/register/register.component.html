@@ -1,0 +1,36 @@
+<p>register works!</p>
+<!--
+<code ((mouseenter))="uppercaseMe()" ((mouseleave))="lowercaseMe()">{{message}}</code>
+
+<div>
+  <button type="button" (click)="buttonPressed($event)">Click!</button>
+</div> -->
+
+<form [formGroup]="form">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name" id=""></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" formControlName="email" id=""></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" value="female" formControlName="gender">female
+        <input type="radio" value="male" formControlName="gender">male
+      </td>
+    </tr>
+    <tr>
+      <td>Hobbies:</td>
+      <td>
+      <input type="checkbox"value="reading">reading
+      <input type="checkbox"value="eating">eating
+      <input type="checkbox"value="sleeping">sleeping
+    </td>
+    </tr>
+
+  </table>
+</form>
